@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function() {
+            $('#header').load('header.html')
+        })
+        $(function() {
+            $('#footer').load('footer.html')
+        })
+        $(function() {
+            $('#section').load('section.html')
+        })
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    
+
+    <div id="form">
+        <div class="login center">
+            <h1>Login</h1>
+            <form method="post" id="loginForm">
+                <div class="txt_field">
+                    <input type="email" required id="email">
+                    <label>e-mail</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required id="password">
+                    <label>Password</label>
+                </div>
+                
+                <button type="button" class="pass" onclick="resetPass()">Forget Password?</button>
+                <input type="submit" class="log_btn" value="Login">
+                <h6 class="log_error"></h6>
+                <div class="signup_link">
+                    <!-- Don't have an account? <a href="#">Signup</a> -->
+                    Don't have an account? <button type="button" class="form_btn" onclick="signUp()">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    
+            <div class="signup center hide">
+                <h1>Sign Up</h1>
+                <form method="post" id="registerForm">
+                    <div class="txt_field">
+                        <input type="text" required id="displayName">
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="email" required id="email">
+                        <label>e-mail</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="password" required id="password">
+                        <label>Password</label>
+                    </div>
+                    <input type="submit" value="Sign Up" class="signButton">
+                    <h6 class="sign_error"></h6>
+                    <div class="signup_link">
+                        <!-- Already have an account? <a href="#">Login</a> -->
+                        Already have an account? <button type="button" class="form_btn" onclick="logIn()">Log In</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="profile center hide">
+                <h3 class="message">You currently signed in as </h3>
+                <form method="post" id="profileForm">
+                    <input type="submit" class="profile_btn" value="Sign Out">
+                </form>
+            </div>
+
+            <div class="passReset center hide">
+                <h3>Reset Password</h3>
+                <form method="post" id="passForm">
+                    <div class="txt_field">
+                        <input type="email" required id="email">
+                        <label>e-mail</label>
+                    </div>
+                    <h6 class="passMsg"></h6>
+                    <button type="button" class="form_btn passlog_btn" onclick="passLogin()">Go to login</button>
+                    <input type="submit" value="Send password reset link" class="form_btn pass_btn">
+                    
+                </form>
+            </div>
+            
+        </div>
+
+    <div id="footer"></div>
+        
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
