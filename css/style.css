@@ -203,6 +203,12 @@ nav a:hover{
     line-height: 30px;
 }
 
+.center .message{
+    text-align: left;
+    padding: 20px 5px 5px 10px;
+    line-height: 30px;
+}
+
 .center form{
     padding: 0 40px;
     box-sizing: border-box;
@@ -312,7 +318,6 @@ input[type="submit"]:hover{
 }
 
 #form{
-    padding-top: 600px;
     color: white;
 }
 
@@ -332,10 +337,6 @@ input[type="submit"]:hover{
 
 .profile_btn{
     margin: 20px 0;
-}
-
-.profilebtn.hide{
-    display: none;
 }
 
 .update_name.hide{

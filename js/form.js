@@ -14,7 +14,6 @@ var message_value = document.querySelector(".message");
 var sign_btn = document.querySelector(".signButton");
 var log_btn = document.querySelector(".log_btn");
 var profile_btn = document.querySelector(".profile_btn");
-var profilebtn = document.querySelector(".profilebtn");
 var log_error = document.querySelector(".log_error");
 var sign_error = document.querySelector(".sign_error");
 var pass_msg = document.querySelector(".passMsg");
@@ -216,13 +215,11 @@ function passLogin(){
 function changeName(){
   updateName.classList.remove("hide");
   newName.classList.remove("hide");
-  profile_btn.classList.add("hide");
 }
 
 function cancelChange(){
   updateName.classList.add("hide");
   newName.classList.add("hide");
-  profilebtn.classList.remove("hide");
 }
 
 // function saveName(){
@@ -238,11 +235,11 @@ function cancelChange(){
 //     console.log("error occured")
 //   });  
 // }
-function saveName(){
-  const user = firebase.auth().currentUser;
-  const uid = user.uid;
-  database.ref(uid).update({
-      userName: profile_form.newDisplayName.value
-  })
-}
+// function saveName(){
+//   const user = firebase.auth().currentUser;
+//   const uid = user.uid;
+//   database.ref(uid).update({
+//       userName: profile_form.newDisplayName.value
+//   })
+// }
 
