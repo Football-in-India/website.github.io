@@ -76,7 +76,7 @@
             </div>
 
             <div class="profile center hide">
-                <h1>Profile</h1>
+                <h1>Profile <i class="far fa-edit" onclick="editName()"></i></h1>
                 <div class="message">User Name: <br>E-mail: </div>
                 <form method="post" id="profileForm">
                     <!-- <button type="button" class="form_btn" onclick="changeName()">Change user name</button>
@@ -90,6 +90,21 @@
                         <button type="submit_profile" class="new_name_btn" onclick="cancelChange()">Cancel</button>
                     </div> -->
                     <input type="submit" class="profile_btn" value="Sign Out">
+                </form>
+            </div>
+
+            <div class="profileEdit center hide">
+                <h1>Edit Profile</h1>
+                <form method="post" id="profileEditForm">
+                    <div class="txt_field">
+                        <input type="text" required id="newName">
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+                    <div class="new_name">
+                        <button type="submit_profile" class="new_name_btn" onclick="saveName()">Save Changes</button>
+                        <button type="submit_profile" class="new_name_btn" onclick="cancelChange()">Cancel</button>
+                    </div>
                 </form>
             </div>
 

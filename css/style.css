@@ -349,6 +349,14 @@ input[type="submit"]:hover{
     margin-top: 0 auto;
 }
 
+.profile i{
+    cursor: pointer;
+}
+
+.profileEdit.hide{
+    display: none;
+}
+
 button[type="submit_profile"]{
     width: 45%;
     height: 35px;
@@ -369,10 +377,7 @@ button[type="submit_profile"]:hover{
 
 .new_name{
     margin-bottom: 30px;
-}
-
-.new_name.hide{
-    display: none;
+    text-align: center;
 }
 
 .new_name_btn{

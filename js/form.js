@@ -4,11 +4,13 @@ const formProfile = document.querySelector(".profile");
 const passReset = document.querySelector(".passReset");
 const updateName = document.querySelector(".update_name");
 const newName = document.querySelector(".new_name");
+const profileEdit = document.querySelector(".profileEdit");
 
 var register_form = document.querySelector("#registerForm");
 var login_form = document.querySelector("#loginForm");
 var profile_form = document.querySelector("#profileForm");
 var pass_form = document.querySelector("#passForm");
+var profile_edit_form = document.querySelector("#profileEditForm");
 
 var message_value = document.querySelector(".message");
 var sign_btn = document.querySelector(".signButton");
@@ -212,34 +214,22 @@ function passLogin(){
   formlogin.classList.remove("hide");
 }
 
-function changeName(){
-  updateName.classList.remove("hide");
-  newName.classList.remove("hide");
+function editName(){
+  formProfile.classList.add("hide");
+  profileEdit.classList.remove("hide");
 }
 
 function cancelChange(){
-  updateName.classList.add("hide");
-  newName.classList.add("hide");
+  formProfile.classList.remove("hide");
+  profileEdit.classList.add("hide");
 }
 
-// function saveName(){
-//   const user = firebase.auth().currentUser;
-//   let name = profile_form.newDisplayName.value;
-//   user.updateProfile({
-//     displayName: name
-//   }).then(() => {
-//     // Update successful
-//     // ...
-//     alert("User name changed successflly")
-//   }).catch((error) => {
-//     console.log("error occured")
-//   });  
-// }
-// function saveName(){
-//   const user = firebase.auth().currentUser;
-//   const uid = user.uid;
-//   database.ref(uid).update({
-//       userName: profile_form.newDisplayName.value
-//   })
-// }
-
+function saveName(){
+  const user = firebase.auth().currentUser;
+  const uid = user.uid;
+  let newName = profile_edit_form.newName.value;
+  database.ref(uid).update({
+      userName: newName
+  })
+  cancelChange();
+}
