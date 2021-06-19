@@ -76,9 +76,20 @@
             </div>
 
             <div class="profile center hide">
-                <h3 class="message">You currently signed in as </h3>
+                <h1>Profile</h1>
+                <h3 class="message">User Name: <br>E-mail: </h3>
                 <form method="post" id="profileForm">
-                    <input type="submit" class="profile_btn" value="Sign Out">
+                    <button type="button" class="form_btn" onclick="changeName()">Change user name</button>
+                    <div class="txt_field update_name hide">
+                        <input type="text" required id="newDisplayName">
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+                    <div class="new_name hide">
+                        <button type="submit_profile" class="new_name_btn" onclick="saveName()">Save Changes</button>
+                        <button type="submit_profile" class="new_name_btn" onclick="cancelChange()">Cancel</button>
+                    </div>
+                    <input type="submit" class="profile_btn profilebtn" value="Sign Out">
                 </form>
             </div>
 
@@ -90,7 +101,7 @@
                         <label>e-mail</label>
                     </div>
                     <h6 class="passMsg"></h6>
-                    <button type="button" class="form_btn passlog_btn" onclick="passLogin()">Go to login</button>
+                    <button type="button" class="form_btn" onclick="passLogin()">Back to login</button>
                     <input type="submit" value="Send password reset link" class="form_btn pass_btn">
                     
                 </form>

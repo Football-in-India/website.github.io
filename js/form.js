@@ -2,6 +2,8 @@ const formlogin = document.querySelector(".login");
 const formSign = document.querySelector(".signup");
 const formProfile = document.querySelector(".profile");
 const passReset = document.querySelector(".passReset");
+const updateName = document.querySelector(".update_name");
+const newName = document.querySelector(".new_name");
 
 var register_form = document.querySelector("#registerForm");
 var login_form = document.querySelector("#loginForm");
@@ -12,11 +14,11 @@ var message_value = document.querySelector(".message");
 var sign_btn = document.querySelector(".signButton");
 var log_btn = document.querySelector(".log_btn");
 var profile_btn = document.querySelector(".profile_btn");
+var profilebtn = document.querySelector(".profilebtn");
 var log_error = document.querySelector(".log_error");
 var sign_error = document.querySelector(".sign_error");
 var pass_msg = document.querySelector(".passMsg");
 var pass_btn = document.querySelector(".pass_btn");
-var passlog_btn = document.querySelector(".passlog_btn");
 
 
 function signUp(){
@@ -193,13 +195,12 @@ function getUser(){
   var userid = database.ref(uid)
   userid.on("value", function(snapshot){
     var data = snapshot.val()
-    message_value.innerHTML = "You currently signed in as " + data.userName
+    message_value.innerHTML = "User Name: " + data.userName + "<br> e-mail: " + data.email;
   })
 }
 
 function resetPass(){
   pass_msg.innerHTML = "";
-  passlog_btn.style.display = "none";
   pass_btn.style.display = "block";
   formlogin.classList.add("hide");
   formSign.classList.add("hide");
@@ -211,3 +212,37 @@ function passLogin(){
   passReset.classList.add("hide");
   formlogin.classList.remove("hide");
 }
+
+function changeName(){
+  updateName.classList.remove("hide");
+  newName.classList.remove("hide");
+  profile_btn.classList.add("hide");
+}
+
+function cancelChange(){
+  updateName.classList.add("hide");
+  newName.classList.add("hide");
+  profilebtn.classList.remove("hide");
+}
+
+// function saveName(){
+//   const user = firebase.auth().currentUser;
+//   let name = profile_form.newDisplayName.value;
+//   user.updateProfile({
+//     displayName: name
+//   }).then(() => {
+//     // Update successful
+//     // ...
+//     alert("User name changed successflly")
+//   }).catch((error) => {
+//     console.log("error occured")
+//   });  
+// }
+function saveName(){
+  const user = firebase.auth().currentUser;
+  const uid = user.uid;
+  database.ref(uid).update({
+      userName: profile_form.newDisplayName.value
+  })
+}
+

@@ -334,8 +334,47 @@ input[type="submit"]:hover{
     margin: 20px 0;
 }
 
-.passlog_btn{
+.profilebtn.hide{
     display: none;
+}
+
+.update_name.hide{
+    display: none;
+}
+
+.update_name{
+    margin-top: 0 auto;
+}
+
+button[type="submit_profile"]{
+    width: 45%;
+    height: 35px;
+    border: 1px solid;
+    background: white;
+    color: black;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+button[type="submit_profile"]:hover{
+    border-color: white;
+    transition: .5s;
+}
+
+.new_name{
+    margin-bottom: 30px;
+}
+
+.new_name.hide{
+    display: none;
+}
+
+.new_name_btn{
+    text-align: center;
+    cursor: pointer;
 }
 
 /* footer */
@@ -732,7 +771,8 @@ section a :hover{
     }
 
     .home-box{
-        margin: 20% 20px;
+        /* margin: 20% 20px; */
+        margin: 0 20px;
     }
     .home-box, .custom-box, .result-box{
         margin-left: 20px;
@@ -776,11 +816,10 @@ section a :hover{
 
     .home-box{
         margin-top: 30%;
-        margin-bottom: 40%;
+        /* margin-bottom: 40%; */
     }
     .quiz-box .card{
         height: 10pc;
-        /* margin: 20px auto; */
     }
     .card .question-img img{
         height: 10pc;
