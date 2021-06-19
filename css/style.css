@@ -21,7 +21,7 @@ header{
 
 main{
     margin: 0 auto;
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
     min-height: calc(100vh - 60px - 50px);
 }
 
@@ -56,8 +56,8 @@ nav{
     font-size: 40px;
     color: #eee;
     text-align: center;
-    /* flex: 1;
-    z-index: 100; */
+    flex: 1;
+    z-index: 100;
 }
 
 nav a{
@@ -772,7 +772,7 @@ section a :hover{
     }
 
     .home-box{
-        /* margin: 20% 20px; */
+        margin: 20% 20px;
         margin: 0 20px;
     }
     .home-box, .custom-box, .result-box{
