@@ -498,7 +498,7 @@ section a :hover{
 
 .custom-box{
     /* max-width: 700px; */
-    width: 50%;
+    width: 60%;
     background-color: rgb(0, 0, 0);
     margin: 40px auto;
     padding: 20px 30px;
@@ -846,14 +846,15 @@ section a :hover{
     
     .quiz-box .card{
         height: 10pc;
-        margin: 15px auto;
+        margin: 17px auto;
     }
     .card .question-img img{
         height: 10pc;
     }
-    /* .quiz-box .question-number{
-        margin-top: -20px;
-    } */
+    .quiz-box .question-number{
+        margin-top: -10px;
+        padding-bottom: 8px;
+    }
     .quiz-box .option-container .option, .quiz-box .btn{
         line-height: 10px;
     }
