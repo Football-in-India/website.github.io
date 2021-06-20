@@ -707,7 +707,7 @@ section a :hover{
         /* width: 80%;
         margin: 0 auto; */
         /* padding: 0px 20px; */
-        min-height: calc(100vh - 60px - 36px);
+        min-height: calc(100vh - 60px - 35.2px);
     }
     nav{
         font-size: 20px;
