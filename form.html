@@ -94,16 +94,15 @@
             </div>
 
             <div class="profileEdit center hide">
+                <i class="fas fa-window-close" onclick="cancelChange()"></i>
                 <h1>Edit Profile</h1>
                 <form method="post" id="profileEditForm">
                     <div class="txt_field">
                         <input type="text" required id="newName">
-                        <span></span>
                         <label>Username</label>
                     </div>
                     <div class="new_name">
-                        <button type="submit_profile" class="new_name_btn" onclick="saveName()">Save Changes</button>
-                        <button type="submit_profile" class="new_name_btn" onclick="cancelChange()">Cancel</button>
+                        <input type="submit" class="new_name_btn" value="Save Changes">
                     </div>
                 </form>
             </div>

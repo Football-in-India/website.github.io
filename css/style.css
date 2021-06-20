@@ -21,7 +21,7 @@ header{
 
 main{
     margin: 0 auto;
-    /* padding: 30px 20px; */
+    padding: 30px 20px;
     min-height: calc(100vh - 60px - 50px);
 }
 
@@ -357,7 +357,7 @@ input[type="submit"]:hover{
     display: none;
 }
 
-button[type="submit_profile"]{
+/* button[type="submit_profile"]{
     width: 45%;
     height: 35px;
     border: 1px solid;
@@ -375,6 +375,19 @@ button[type="submit_profile"]:hover{
     transition: .5s;
 }
 
+.new_name input[type="submit"]{
+    width: 45%;
+    height: 35px;
+    border: 1px solid;
+    background: white;
+    color: black;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+} */
+
 .new_name{
     margin-bottom: 30px;
     text-align: center;
@@ -382,6 +395,14 @@ button[type="submit_profile"]:hover{
 
 .new_name_btn{
     text-align: center;
+    cursor: pointer;
+}
+
+.profileEdit i{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 150%;
     cursor: pointer;
 }
 
@@ -476,10 +497,11 @@ section a :hover{
 /* Quiz.html */
 
 .custom-box{
-    max-width: 700px;
+    /* max-width: 700px; */
+    width: 50%;
     background-color: rgb(0, 0, 0);
     margin: 40px auto;
-    padding: 30px;
+    padding: 20px 30px;
     border-radius: 5px;
     animation: fadeInRight 1s ease;
 }
@@ -598,7 +620,7 @@ section a :hover{
 .quiz-box .card{
     background-color: #ffffff;
     border-radius: 5px;
-    margin: 40px auto;
+    margin: 25px auto;
     height: 14pc;
     text-align: center;
 }
@@ -730,8 +752,8 @@ section a :hover{
 @media (max-width: 730px) {
     main{
         /* width: 80%;
-        margin: 0 auto;
-        padding: 30px 20px; */
+        margin: 0 auto; */
+        padding: 0px 20px;
         min-height: calc(100vh - 60px - 34.4px);
     }
     nav{
@@ -770,7 +792,7 @@ section a :hover{
     }
     #sm{
         top: 43px;
-        height: 40px;
+        height: 35px;
         width: 140px;
         position: fixed;
     }
@@ -778,26 +800,23 @@ section a :hover{
         font-size: 22px;
     }
 
-    .home-box{
-        margin: 20% 20px;
-        margin: 0 20px;
+    .custom-box{
+        width: 100%;
     }
-    .home-box, .custom-box, .result-box{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+
+    
     .quiz-box .card{
-        height: 12pc;
+        height: 10pc;
         margin: 30px auto;
     }
     .card .question-img img{
-        height: 12pc;
+        height: 10pc;
     }
-    .quiz-box .question-number{
-        margin-top: -15px;
-    }
+    /* .quiz-box .question-number{
+        margin-top: px;
+    } */
     .quiz-box .option-container .option, .quiz-box .btn{
-        line-height: 16px;
+        line-height: 14px;
     }
 }
 
@@ -822,21 +841,18 @@ section a :hover{
         padding-top: 20%;
     }
 
-    .home-box{
-        margin-top: 30%;
-        /* margin-bottom: 40%; */
-    }
+    
     .quiz-box .card{
         height: 10pc;
     }
     .card .question-img img{
         height: 10pc;
     }
-    .quiz-box .question-number{
+    /* .quiz-box .question-number{
         margin-top: -20px;
-    }
+    } */
     .quiz-box .option-container .option, .quiz-box .btn{
-        line-height: 11px;
+        line-height: 10px;
     }
 
     .center{

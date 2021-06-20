@@ -190,6 +190,20 @@ if(pass_form){
   })
 }
 
+if(profile_edit_form){
+  profile_edit_form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const user = firebase.auth().currentUser;
+    const uid = user.uid;
+    let newName = profile_edit_form.newName.value;
+    database.ref(uid).update({
+      userName: newName
+    })
+    alert("User name updated successfully!")
+  cancelChange();
+  })
+}
+
 function getUser(){
   const user = firebase.auth().currentUser;
   const uid = user.uid;
@@ -222,14 +236,4 @@ function editName(){
 function cancelChange(){
   formProfile.classList.remove("hide");
   profileEdit.classList.add("hide");
-}
-
-function saveName(){
-  const user = firebase.auth().currentUser;
-  const uid = user.uid;
-  let newName = profile_edit_form.newName.value;
-  database.ref(uid).update({
-      userName: newName
-  })
-  cancelChange();
 }
