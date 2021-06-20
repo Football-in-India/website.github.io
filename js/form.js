@@ -2,7 +2,6 @@ const formlogin = document.querySelector(".login");
 const formSign = document.querySelector(".signup");
 const formProfile = document.querySelector(".profile");
 const passReset = document.querySelector(".passReset");
-const updateName = document.querySelector(".update_name");
 const newName = document.querySelector(".new_name");
 const profileEdit = document.querySelector(".profileEdit");
 
@@ -210,7 +209,7 @@ function getUser(){
   var userid = database.ref(uid)
   userid.on("value", function(snapshot){
     var data = snapshot.val()
-    message_value.innerHTML = "User Name: " + data.userName + "<br> e-mail: " + data.email;
+    message_value.innerHTML = "<b>User Name:</b> " + data.userName + "<br><b>E-mail:</b> " + data.email;
   })
 }
 
