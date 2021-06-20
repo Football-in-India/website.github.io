@@ -800,6 +800,8 @@ section a :hover{
         font-size: 22px;
     }
 
+    
+
     .custom-box{
         width: 100%;
     }
@@ -807,7 +809,7 @@ section a :hover{
     
     .quiz-box .card{
         height: 10pc;
-        margin: 30px auto;
+        margin: 25px auto;
     }
     .card .question-img img{
         height: 10pc;
@@ -844,6 +846,7 @@ section a :hover{
     
     .quiz-box .card{
         height: 10pc;
+        margin: 18px auto;
     }
     .card .question-img img{
         height: 10pc;

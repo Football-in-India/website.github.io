@@ -98,7 +98,7 @@ if(register_form){
             const uid = user.uid;
             database.ref(uid).set({
                 email : email,
-                password : password,
+                // password : password,
                 userName : userName,
                 questionCount : 0,
                 correct : 0
