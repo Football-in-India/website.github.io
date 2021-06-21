@@ -189,18 +189,20 @@ if(profile_edit_form){
 
 function googleSign(){
   var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithRedirect(provider);
   firebase.auth()
-  .signInWithPopup(provider)
+  .getRedirectResult()
   .then((result) => {
-    /** @type {firebase.auth.OAuthCredential} */
-    var credential = result.credential;
+    if (result.credential) {
+      /** @type {firebase.auth.OAuthCredential} */
+      var credential = result.credential;
 
-    // This gives you a Google Access Token. You can use it to access the Google API.
-    var token = credential.accessToken;
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      var token = credential.accessToken;
+      // ...
+    }
     // The signed-in user info.
     var user = result.user;
-    console.log("google gign success")
-    // ...
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;
@@ -210,7 +212,6 @@ function googleSign(){
     // The firebase.auth.AuthCredential type that was used.
     var credential = error.credential;
     // ...
-    console.log("error google sign")
   });
 }
 
