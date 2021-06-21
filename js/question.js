@@ -156,7 +156,75 @@ const quiz = [
     },
     {
         //38.png
-        options:['Narender Gahlot','Anwar Ali','Narender Gehlot','Nishu Kumar'],
+        options:['Akash Mishra','Anwar Ali','Narender Gehlot','Nishu Kumar'],
         answer:2
+    },
+    {
+        options:['Halicharan Narzary','Vinit Rai','Jessel Carneiro','Nishu Kumar'],
+        answer:0
+    },
+    {
+        options:['Dheeraj Singh','Naveen Kumar','Mohammed Nawaz','Prabhsukhsn Gill'],
+        answer:2
+    },
+    {
+        options:['Anwar Ali','Nishu Kumar','Niraj Kumar','Pawan Kumar'],
+        answer:2
+    },
+    {
+        options:['Jeje Lalpekhlua','Ogbeche','Diego Mauricio','Mourtada Fall'],
+        answer:1
+    },
+    {
+        options:['Ashutosh Mehta','Aniket Jadhav','Pritam Kotal','Ishan Pandita'],
+        answer:2
+    },
+    {
+        options:['Balwant Singh','CK Vineeth','Farukh Chaudhary','Reynier Fernandes'],
+        answer:3
+    },
+    {
+        options:['VP Suhair','TP Rehenesh','Mashoor Shareef','Britto'],
+        answer:1
+    },
+    {
+        options:['Aridane Santana','Ashutosh Mehta','Ahamed Jahouh','Amey Ranawade'],
+        answer:0
+    },
+    {
+        options:['Jerry Mawihmingthanga','Lallianzuala Chhangthe','Mobashir Rahman','Shubham Sarangi'],
+        answer:3
+    },
+    {
+        options:['Apuia','Boris Singh','Asish Rai','Daniel Lalhlimpuia'],
+        answer:2
+    },
+    {
+        options:['VP Suhair','TP Rehenesh','Mashoor Shareef','Britto'],
+        answer:0
+    },
+    {
+        options:['Alberto Noguera','Carl McHugh','Ivan Gonzalez','Tiri'],
+        answer:3
+    },
+    {
+        options:['Rafael Crivellaro','Nerijus Valskis','Peter Haertley','Cole Alexander'],
+        answer:1
+    },
+    {
+        options:['Vikram Pratap','Ashutosh Mehta','Rohit Kumar','Amey Ranawade'],
+        answer:0
+    },
+    {
+        options:['Mohammed Yasir','Lallianzuala Chhangthe','Shubham Sarangi','Vinit Rai'],
+        answer:3
+    },
+    {
+        options:['Bilal Khan','Prabhsukhan Gill','Vishal Kaith','Pawan Kumar'],
+        answer:2
+    },
+    {
+        options:['David Williams','Peter Hartley','Javi Hernandes','Jordan Murray'],
+        answer:0
     }
 ]
