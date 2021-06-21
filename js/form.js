@@ -45,9 +45,7 @@ var firebaseConfig = {
 
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/firebase.User
-      // var uid = user.uid;
+      // User is signed in
       console.log("logged in")
       formlogin.classList.add("hide");
       formSign.classList.add("hide");
@@ -56,26 +54,12 @@ var firebaseConfig = {
       // ...
     } else {
       // User is signed out
-      // ...
       console.log("Not logged")
       formlogin.classList.remove("hide");
       formSign.classList.add("hide");
       formProfile.classList.add("hide");
     }
   });
-  
-//   const user = firebase.auth().currentUser;
-//   if (user) {
-//     console.log("logged in")
-//     formlogin.classList.add("hide");
-//     formSign.classList.add("hide");
-//     formProfile.classList.remove("hide");
-// } else {
-//   console.log("Not logged")
-//     formlogin.classList.remove("hide");
-//     formSign.classList.remove("hide");
-//     formProfile.classList.add("hide");
-// }
 
   var database = firebase.database()
 
@@ -201,6 +185,33 @@ if(profile_edit_form){
     alert("User name updated successfully!")
   cancelChange();
   })
+}
+
+function googleSign(){
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    /** @type {firebase.auth.OAuthCredential} */
+    var credential = result.credential;
+
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    console.log("google gign success")
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+    console.log("error google sign")
+  });
 }
 
 function getUser(){
