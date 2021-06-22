@@ -466,6 +466,74 @@ section a :hover{
     padding-left: 5px;
 }
 
+/* transfer.html */
+  
+  :root {
+    --primary: #c014c0;
+    --primary-light: #c790c7;
+    --dark: #1a1919;
+    --light: #f0f0f0;
+  }
+
+  
+  .container {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    background: #f0f0f0;
+  }
+
+  .main_head{
+      padding-bottom: 20px;
+  }
+  
+  
+  #pagination .list {
+    margin: 0px 0;
+  }
+  
+  #pagination .list .item {
+    padding: 20px;
+    border-bottom: 4px solid white;
+    font-size: 24px;
+  }
+  
+  #pagination .list .item:hover {
+    background: black;
+    color: white;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .controls div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .controls div:not(.numbers) {
+    width: 50px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .controls .numbers {
+    display: flex;
+    align-items: center;
+  }
+  
+  .controls .numbers div:hover,
+  .controls .numbers div.active {
+    color: black;
+    font-weight: bold;
+  }
+
 /* Quiz.html */
 
 .custom-box{
@@ -778,6 +846,14 @@ section a :hover{
         font-size: 22px;
     }
 
+    #pagination .list .item {
+        font-size: 20px;
+      }
+    
+      .controls div:not(.numbers) {
+        font-size: 18px;
+      }
+
     .custom-box{
         width: 100%;
     }
@@ -824,6 +900,17 @@ section a :hover{
         padding-top: 20%;
     }
 
+    #pagination .list .item {
+        padding: 10px;
+        border-bottom: 3px solid white;
+        font-size: 18px;
+      }
+    
+      .controls div:not(.numbers) {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }
     
     .quiz-box .card{
         height: 10pc;
