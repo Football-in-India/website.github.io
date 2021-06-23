@@ -79,9 +79,6 @@ const quiz = [
         options:['Mohammed Yasir','Anirudh Thapa','Akash Mishra','Halicharan Narzary'],
         answer:1
     },
-
-    //update
-
     {
         options:['Albino Gomes','Arshdeep Singh','Naveen Kumar','Mohammed Nawas'],
         answer:0
@@ -115,19 +112,19 @@ const quiz = [
         answer:0
     },
     {
-        options:['Jerri Lalrinzuala','Sahal Samad','Balwant Singh','Mourtada Fall'],
+        options:['Stephen Eze','Deshorn Brown','Idrissa Sylla','Mourtada Fall'],
         answer:3
     },
     {
-        options:['Mohammed Yasir','Fedrico Gallego','Akash Mishra','Halicharan Narzary'],
+        options:['Machado','Fedrico Gallego','Danny Fox','Fran Sandaza'],
         answer:1
     },
     {
-        options:['Hugo Boumous','Mobashir Rahman','Lallianzuala Chhangthe','Rahim Ali'],
+        options:['Hugo Boumous','Pilkington','Lluis Sastre','Rahim Ali'],
         answer:0
     },
     {
-        options:['Udanta Singh','Ishan Pandita','Jackichand Singh','Komal Thatal'],
+        options:['Udanta Singh','Liston Colaco','Jackichand Singh','Komal Thatal'],
         answer:2
     },
     {
@@ -225,6 +222,103 @@ const quiz = [
     },
     {
         options:['David Williams','Peter Hartley','Javi Hernandes','Jordan Murray'],
+        answer:0
+    },
+    //update
+    {
+        options:['Aridane Santana','Ivan Gonzalez','Hernan Santana','Cole Alexander'],
+        answer:3
+    },
+    {
+        options:['Ivan Gonzalez','Igor Angulo','Deshorn Brown','Hernan Santana'],
+        answer:1
+    },
+    {
+        options:['Aniket Jadhav','Akash Mishra','Suresh Singh','Rahim Ali'],
+        answer:0
+    },
+    {
+        options:['Germanpreet Singh','Denechandra Meitei','Romario Jesuraj'],
+        answer:2
+    },
+    {
+        options:['Gaurav Bora','Glan Martins','Narayan Das','Britto PM'],
+        answer:0
+    },
+    {
+        options:['Costa Nhamoinesu','Khassa Camara','Carl McHugh','Peter Hartley'],
+        answer:1
+    },
+    {
+        options:['Rafael Crivellaro','Nerijus Valskis','Bakary Kone','Costa Nhamoinesu'],
+        answer:3
+    },
+    {
+        options:['Danny Fox','Facundo Pereyra','Pilkington','Gary Hooper'],
+        answer:0
+    },
+    {
+        options:['Sipovic','Vicente Gomez','Steven Taylor','James Donachi'],
+        answer:3
+    },
+    {
+        options:['Dhanpal Ganesh','Germanpreet Singh','Srinivas Pandiyan','Edwin Sydney'],
+        answer:3
+    },
+    {
+        options:['Stephen Eze','Isma','Diego Mauricio','Deshorn Brown'],
+        answer:0
+    },
+    {
+        options:['Facundo Pereyra','Brnjamin Lambot','Dylan Fox','Sergio Cido'],
+        answer:0
+    },
+    {
+        options:['Sumit Rathi','Prabhir Das','Manvir Singh','Farukh Chaudhary'],
+        answer:3
+    },
+    {
+        options:['Aitor Monroy','Jorge Ortiz','Fitzgerald','Igor Angulo'],
+        answer:2
+    },
+    {
+        options:['Aitor Monroy','David Grande','Hernan Santana','Adam Le Fondre'],
+        answer:3
+    },
+    {
+        options:['Givson Singh','Ayush Adhikari','Puitea','Shubho Gosh'],
+        answer:0
+    },
+    {
+        options:['Chinglensana Singh','Adil Khan','Halicharan Narzary','Nikhil Poojary'],
+        answer:2
+    },
+    {
+        options:['Odei Onaindia','Joao Victor','Hernan Santana','Ahmed Jahouh'],
+        answer:2
+    },
+    {
+        options:['Amadi Holloway','Bright Enobakhare','James Maghoma','Danny Fox'],
+        answer:0
+    },
+    {
+        options:['Gary Hooper','Juanan','Javi Hernandez','Cole Alexander'],
+        answer:0
+    },
+    {
+        options:['Jacob Tratt','Peter Hartley','Brad Inman','Odei Onaindia'],
+        answer:2
+    },
+    {
+        options:['Isma','Stephen Eze','Musavu King','Deshorn Brown'],
+        answer:0
+    },
+    {
+        options:['Sandesh Jhingan','Sandeep Singh','Raju Gaikwad','Adil Khan'],
+        answer:3
+    },
+    {
+        options:['Jessel Carneiro','Leon Augustine','Thoi Singh','Mandar Rao Desai'],
         answer:0
     }
 ]
