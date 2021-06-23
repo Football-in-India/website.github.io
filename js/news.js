@@ -7,7 +7,7 @@ function getHtml(element) {
 //   const datas = Array.from({ length: 51 })
 //     .map((_, index) => `Item ${index + 1}`);
 
-    var newsArray = ["Hyderabad FC Sign Winger Abdul Rabeeh from Luca SC", "Football Delhi becomes the first Indian sports entity to venture into esports",
+    var newsArray = ["‘FC Goa on the hunt for striker who can score 15 or more goals,’ says club's director Ravi Puskur [ToI]","Hyderabad FC Sign Winger Abdul Rabeeh from Luca SC", "Football Delhi becomes the first Indian sports entity to venture into esports",
   "Back on Track: Dream Sports Foundation lends support to sports professionala", "Sunil Chhetri to stay in Bengaluru FC till 2023, signs new 2-year deal",
 "Indian women football clubs' representatives take part in online UEFA marketing workshop", "National team not a factory to produce players: Stimac",
 "Indian Football Veterans Renedy Singh, Bembem Devi And Shaji Prabhakaran Join Zinc Football", "Rahim Ali signs up to play for Chennaiyin FC for two more years",
