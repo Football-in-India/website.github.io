@@ -135,26 +135,20 @@ function tryAgain(){
 }
 
 function startGame(){
-    // firebase.auth().onAuthStateChanged((user) => {
-    //     if (user) {
-    //         console.log("logged in")
-    //         getData();
-    //         start_btn.innerHTML = "Loading..."
-    //         setAvailableQuestions();
-    //         currentQstn();
-    //     } else {
-    //       // User is signed out
-    //       // ...
-    //       log_in.classList.remove("hide");
-    //       console.log("Not logged")
-    //     }
-    //   });
-    questionCounter = 0;
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+            console.log("logged in")
+            getData();
+            start_btn.innerHTML = "Loading..."
+            setAvailableQuestions();
+            currentQstn();
+        } else {
+          // User is signed out
+          // ...
           log_in.classList.remove("hide");
           console.log("Not logged")
-          setAvailableQuestions();
-            currentQstn();
-}
+        }
+      });
 
 function currentQstn(){
     if(questionCounter > -1){
