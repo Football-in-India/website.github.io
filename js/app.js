@@ -149,7 +149,7 @@ function startGame(){
           console.log("Not logged")
         }
       });
-
+    }
 function currentQstn(){
     if(questionCounter > -1){
         console.log("if")
