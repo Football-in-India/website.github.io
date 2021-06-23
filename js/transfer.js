@@ -8,7 +8,7 @@ function getHtml(element) {
 //     .map((_, index) => `Item ${index + 1}`);
 
   var newsArray = ["<b>23 June 2021</b>", "Australian young Center Back Aleksandar Susnjar in advanced talks with Kerala Blasters", "Neroca FC sign Vicky Metei on a two-year deal", "Kerala United FC to extend Arjun Jayaraj’s contract until 2023","Nikita Rukavytsya, who was rumoured to be linked with ATK Mohun Bagan, will not be coming to India",
-"22 June 2021", "Gokulam Kerala set to sign former Santhosh Trophy winner Midhun", "Hyderabad FC Sign Winger Abdul Rabeeh from Luca SC", "ATK Mohun Baga ropes in Finland international Joni Kauko, who has featured in all the three matches of ongoing UEFA Euro Cup",
+"<b>22 June 2021</b>", "Gokulam Kerala set to sign former Santhosh Trophy winner Midhun", "Hyderabad FC Sign Winger Abdul Rabeeh from Luca SC", "ATK Mohun Baga ropes in Finland international Joni Kauko, who has featured in all the three matches of ongoing UEFA Euro Cup",
 "Mohammedan SC completes the signing of Sushil Meetei", "Kerala United sign Kalliyath Salman from Gokulam Kerala", "Australian striker Nikita Rukavytsya in in the radar of ATK Mohun Bagan",
 "Jamshedpur FC & NorthEast United FC are interested in Michael Regin", "Sunil Chhetri extends the contract with Brngaluru FC till 2023", "FC goa are interested in former Man City striker Wlfred Bony",
 "Chennaiyin FC, Sreenidhi FC  & Churchill Brothers are interested in Wayne Vaz", "Churchill Brothers appoints Romanian Peter Gigiu as their head coach", "Ivan Vukomanovic joins Bengaluru FC as head coach",
