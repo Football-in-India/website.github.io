@@ -7,7 +7,7 @@ function getHtml(element) {
 //   const datas = Array.from({ length: 51 })
 //     .map((_, index) => `Item ${index + 1}`);
 
-    var newsArray = ["<b>24 June 2021", "Sporting Clube will return to top tier soon, national title remains a dream: Natalina Vaz – <i>ToI</i>",
+    var newsArray = ["<b>24 June 2021", "FC Goa announce the partnership village club Sporting Club of Porvorim as part of the plan to develop the football ecosystem. With the agreement, FC Goa will provide technical expertise to the club under the guidance of technical Team.", "Sporting Clube will return to top tier soon, national title remains a dream: Natalina Vaz – <i>ToI</i>",
 "<b>23 June 2021", "Kerala Blasters are on the lookout for a tall and physical striker, someone who is injury free. If the club could find a defensive midfielder who can also play as stopper back, Kerala will have only 5 foreign players.",
     "<b>22 June 2021", "Kerala United FC to extend Arjun Jayaraj’s contract until 2023", "‘FC Goa on the hunt for striker who can score 15 or more goals,’ says club's director Ravi Puskur [ToI]","Hyderabad FC Sign Winger Abdul Rabeeh from Luca SC", "Football Delhi becomes the first Indian sports entity to venture into esports",
   "Back on Track: Dream Sports Foundation lends support to sports professionala", "Sunil Chhetri to stay in Bengaluru FC till 2023, signs new 2-year deal",
