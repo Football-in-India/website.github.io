@@ -811,9 +811,9 @@ section a :hover{
         font-size: 14px;
     }
 
-    #section{
+    /* #section{
         padding-top: 10%;
-    }
+    } */
     
     /* footer ul{
         display: flex;
@@ -857,9 +857,9 @@ section a :hover{
     .custom-box{
         width: 100%;
     }
-    .home-box{
+    /* .home-box{
         margin-top: 30%;
-    }
+    } */
     .quiz-box .question-number{
         font-size: 16px;
     }
@@ -896,9 +896,9 @@ section a :hover{
         
         font-size: 12px;
     }
-    #section{
+    /* #section{
         padding-top: 20%;
-    }
+    } */
 
     #pagination .list .item {
         padding: 10px;
