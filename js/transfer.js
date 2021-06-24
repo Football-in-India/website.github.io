@@ -7,7 +7,7 @@ function getHtml(element) {
 //   const datas = Array.from({ length: 51 })
 //     .map((_, index) => `Item ${index + 1}`);
 
-  var newsArray = ["<b>23 June 2021</b>", FC "Goa has signed Sporting Clube de Goa defender Kunal Kundaikar on a three-year deal",
+  var newsArray = ["<b>23 June 2021</b>", "FC Goa has signed Sporting Clube de Goa defender Kunal Kundaikar on a three-year deal",
 "<b>23 June 2021</b>", "Suresh Singh extends contract with Bengaluru FC until 2024", "Neroca FC announces the signing of 21-year-old Manipuri defender Mohammed Salam", "Bengaluru FC completes the signing of I-league 2020-21 golden boot winner Bidyashagar Singh", "Aleksandar Susnjar, who was reportedly in talks with Kerala Blasters, will not join the club", "Gokulam Kerala’s 23 year-old midfielder Shibil Muhammed is all set to join Sreenidhi FC – <i>IFTWC</i>", "Australian young Center Back Aleksandar Susnjar in advanced talks with Kerala Blasters", "Neroca FC sign Vicky Metei on a two-year deal", "Kerala United FC to extend Arjun Jayaraj’s contract until 2023","Nikita Rukavytsya, who was rumoured to be linked with ATK Mohun Bagan, will not be coming to India",
 "<b>22 June 2021</b>", "Gokulam Kerala set to sign former Santhosh Trophy winner Midhun", "Hyderabad FC Sign Winger Abdul Rabeeh from Luca SC", "ATK Mohun Baga ropes in Finland international Joni Kauko, who has featured in all the three matches of ongoing UEFA Euro Cup",
 "Mohammedan SC completes the signing of Sushil Meetei", "Kerala United sign Kalliyath Salman from Gokulam Kerala", "Australian striker Nikita Rukavytsya in in the radar of ATK Mohun Bagan",
