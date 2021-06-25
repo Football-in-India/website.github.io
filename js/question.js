@@ -108,7 +108,7 @@ const quiz = [
         answer:2
     },
     {
-        options:['Eugeneson Lyngdoh','Mobashir Rahman','Boris Singh','Ishan Pandita'],
+        options:['Semboi Haokip','Mobashir Rahman','Boris Singh','Ishan Pandita'],
         answer:0
     },
     {
@@ -157,7 +157,7 @@ const quiz = [
         answer:2
     },
     {
-        options:['Halicharan Narzary','Vinit Rai','Jessel Carneiro','Nishu Kumar'],
+        options:['Prabhir Das','Vinit Rai','Jessel Carneiro','Nishu Kumar'],
         answer:0
     },
     {
@@ -238,11 +238,11 @@ const quiz = [
         answer:0
     },
     {
-        options:['Germanpreet Singh','Denechandra Meitei','Romario Jesuraj'],
+        options:['Germanpreet Singh','Denechandra Meitei','Ashutosh Mehta','Romario Jesuraj'],
         answer:2
     },
     {
-        options:['Gaurav Bora','Glan Martins','Narayan Das','Britto PM'],
+        options:['CK Vineeth','Glan Martins','Narayan Das','Britto PM'],
         answer:0
     },
     {
@@ -254,7 +254,7 @@ const quiz = [
         answer:3
     },
     {
-        options:['Danny Fox','Facundo Pereyra','Pilkington','Gary Hooper'],
+        options:['Juanan','Facundo Pereyra','Pilkington','Gary Hooper'],
         answer:0
     },
     {
@@ -278,7 +278,7 @@ const quiz = [
         answer:3
     },
     {
-        options:['Aitor Monroy','Jorge Ortiz','Fitzgerald','Igor Angulo'],
+        options:['Aitor Monroy','Jorge Ortiz','Onwu','Igor Angulo'],
         answer:2
     },
     {
@@ -306,7 +306,7 @@ const quiz = [
         answer:0
     },
     {
-        options:['Jacob Tratt','Peter Hartley','Brad Inman','Odei Onaindia'],
+        options:['Jacob Tratt','Peter Hartley','Ahmed Jahouh','Odei Onaindia'],
         answer:2
     },
     {
@@ -320,5 +320,66 @@ const quiz = [
     {
         options:['Jessel Carneiro','Leon Augustine','Thoi Singh','Mandar Rao Desai'],
         answer:0
+    },
+    //update
+    {
+        options:['Lallianzuala Chhangte','Jerry Mawihmingthanga','Jerry Lalrinzuala','Nongdamba Naorem'],
+        answer:0
+    },
+    {
+        options:['Samuel Lalmuanpia','Mandar Rao Desai','Farukh Chaudhary','Jerry Mawihmingthanga'],
+        answer:3
+    },
+    {
+        options:['Sandesh Jhingan','Adil Khan','Eric Paartalu','Alex Lima'],
+        answer:0
+    },
+    {
+        options:['Alex Lima','Joao Victor','Bakary Kone','Eric Paartalu'],
+        answer:2
+    },
+    {
+        options:['Alex Lima','Brnjamin Lambot','Dylan Fox','Sergio Cido'],
+        answer:0
+    },
+    {
+        options:['Jerry Lalrinzuala','Mandar Rao Desai','Samuel Lalmuanpia','Udanta Singh'],
+        answer:1
+    },
+    {
+        options:['Fitzgerald','Danny Fox','Aitor Monroy','Jacob Tratt'],
+        answer:2
+    },
+    {
+        options:['Eric Paartalu','Alex Lima','James Maghoma','Danny Fox'],
+        answer:0
+    },
+    {
+        options:['Nikhil Poojary','Adil Khan','Glan Mrtins','Akash Mishra'],
+        answer:0
+    },
+    {
+        options:['Nafender Gahlot','Jeakson Singh','Sumit Rathi','Apuia'],
+        answer:2
+    },
+    {
+        options:['Rowllin Borges','Glan Martins','Musavu King','Deshorn Brown'],
+        answer:0
+    },
+    {
+        options:['Idrissa Sylla','Deshorn Brown','Rafael Crivellaro','Roy Krishna'],
+        answer:3
+    },
+    {
+        options:['James Donachie','Ivan Gonzalez','Enes Sipovic','Jcob Tratt'],
+        answer:2
+    },
+    {
+        options:['Apuia','Boris Singh','Komal Thatal','Suresh Singh'],
+        answer:3
+    },
+    {
+        options:['Romario Jesuraj','Udanta Singh','Thoi Singh','Mandar Rao Desai'],
+        answer:1
     }
 ]
