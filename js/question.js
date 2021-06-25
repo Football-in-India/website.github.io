@@ -381,5 +381,26 @@ const quiz = [
     {
         options:['Romario Jesuraj','Udanta Singh','Thoi Singh','Mandar Rao Desai'],
         answer:1
+    },
+    //update
+    {
+        options:['Akash Mishra','Glan Martins','Hendry Antonay','Harmanpreet Singh'],
+        answer:0
+    },
+    {
+        options:['Samuel Lalmuanpia','Mandar Rao Desai','Ankit Mukherjee','Apuia'],
+        answer:3
+    },
+    {
+        options:['Glan Martins','Sandesh Jhingan','Adil Khan','Raju Gaikwad'],
+        answer:0
+    },
+    {
+        options:['Leon Augustine','Imran Khan','Chinglensana Singh','Ninthoi Meetei'],
+        answer:2
+    },
+    {
+        options:['Pronay Halder','Sandeep Singh','Boris Singh','Seriton Fernandes'],
+        answer:1
     }
 ]
