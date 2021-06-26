@@ -355,6 +355,12 @@ input[type="submit"]:hover{
     cursor: pointer;
 }
 
+.passMsg{
+    color: red;
+    font-size: 14px;
+    margin-top: -20px;
+}
+
 /* footer */
 
 footer{

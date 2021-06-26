@@ -18,7 +18,7 @@ function getHtml(element) {
 "Gary Hooper has returned to Wellington Phoenix after a breif stint with Kerala Blaters"];
 
 // Define application states like actual page, total pages...
-let perPage = 5;
+let perPage = 6;
 const states = {
   page: 1,
   perPage,

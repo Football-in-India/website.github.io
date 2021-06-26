@@ -21,7 +21,7 @@ function getHtml(element) {
 "East Bengal told to sort out problems quickly by FSDL", "ISL likely in Goa again; Qatar, UAE foreign options"];
   
   // Define application states like actual page, total pages...
-  let perPage = 5;
+  let perPage = 6;
   const states = {
     page: 1,
     perPage,

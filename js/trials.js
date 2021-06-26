@@ -15,7 +15,7 @@ function getHtml(element) {
     page: 1,
     perPage,
     totalPages: Math.ceil(newsArray.length / perPage),
-    maxVisibleButtons: 3,
+    maxVisibleButtons: 1,
   }
   
   // Corresponding to the list of items

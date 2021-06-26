@@ -472,7 +472,7 @@ const quiz = [
         answer:0
     },
     {
-        options:['Steven Taylor','Fatkhulloev','Vicente Gomes','Pilkington'],
+        options:['Steven Taylor','Sergio Cidoncha','Vicente Gomes','Edu Bedia'],
         answer:3
     },
     {
@@ -512,7 +512,7 @@ const quiz = [
         answer:3
     },
     {
-        options:['Seriton Fernandes','Thoi Singh','Komal Thatal','Raju Gaikwad'],
+        options:['Souvik Chakrabarti','Thoi Singh','Komal Thatal','Raju Gaikwad'],
         answer:0
     },
     {

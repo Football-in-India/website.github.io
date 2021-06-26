@@ -158,19 +158,33 @@ if(pass_form){
   pass_form.addEventListener('submit', function(e) {
     e.preventDefault();
     let email = pass_form.email.value;
-    firebase.auth().sendPasswordResetEmail(email)
+  //   firebase.auth().sendPasswordResetEmail(email)
+  // .then(() => {
+  //   // Password reset email sent!
+  //   pass_msg.innerHTML = "Password reset link sent to " + email;
+  //   passlog_btn.style.display = "block";
+  //   pass_btn.style.display = "none";
+  // })
+  // .catch((error) => {
+  //   var errorCode = error.code;
+  //   var errorMessage = error.message;
+  //   console.log("mail not sent")
+  //   pass_msg.innerHTML = "No account exists with id " + email;
+  //   passlog_btn.style.display = "block";
+  // });
+  firebase.auth().sendPasswordResetEmail(email)
   .then(() => {
     // Password reset email sent!
+    // ..
+    console.log("mail sent")
     pass_msg.innerHTML = "Password reset link sent to " + email;
-    passlog_btn.style.display = "block";
-    pass_btn.style.display = "none";
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
+    // ..
     console.log("mail not sent")
     pass_msg.innerHTML = "No account exists with id " + email;
-    passlog_btn.style.display = "block";
   });
   })
 }
