@@ -48,7 +48,7 @@ const quiz = [
         answer:0
     },
     {
-        options:['Prashant','Anwar Ali','Gurpreet Singh','Arshdeep Singh'],
+        options:['Prashant','Anwar Ali','Hitesh Sharma','Arshdeep Singh'],
         answer:0
     },
     {
@@ -56,7 +56,7 @@ const quiz = [
         answer:1
     },
     {
-        options:['Sunil Chhetri','Sahal Samad','Asish Rai','Udanta Singh'],
+        options:['Suresh Singh','Sahal Samad','Asish Rai','Udanta Singh'],
         answer:1
     },
     {
@@ -84,11 +84,11 @@ const quiz = [
         answer:0
     },
     {
-        options:['Udanta Singh','Jorge Ortiz','Amrinder Singh','Ishan Pandita'],
+        options:['Subhasish Roy','Vishal Kaith','Amrinder Singh','Prabhsukhan Singh'],
         answer:2
     },
     {
-        options:['Balwant Singh','Amrinder Singh','Subratha Paul','Arshdeep Singh'],
+        options:['Balwant Singh','Manvir Singh','Fraukh Chaudhary','VP Suhair'],
         answer:0
     },
     {
@@ -104,11 +104,11 @@ const quiz = [
         answer:3
     },
     {
-        options:['Udanta Singh','Aniket Jadhav','Dimas Delgado','Lallianzuala Chhangthe'],
+        options:['Cleiton Silva','Facundo Pereyra','Dimas Delgado','Vicente Gomez'],
         answer:2
     },
     {
-        options:['Semboi Haokip','Mobashir Rahman','Boris Singh','Ishan Pandita'],
+        options:['Semboi Haokip','Mobashir Rahman','Boris Singh','Glan Martins'],
         answer:0
     },
     {
@@ -120,15 +120,15 @@ const quiz = [
         answer:1
     },
     {
-        options:['Hugo Boumous','Pilkington','Lluis Sastre','Rahim Ali'],
+        options:['Hugo Boumous','Pilkington','Lluis Sastre','Fran Sandaza'],
         answer:0
     },
     {
-        options:['Udanta Singh','Liston Colaco','Jackichand Singh','Komal Thatal'],
+        options:['Udanta Singh','Boris Singh','Jackichand Singh','Komal Thatal'],
         answer:2
     },
     {
-        options:['Albono Gomez','Subhasish Roy','Jitendra Singh','Naveen Kumar'],
+        options:['Apuia','Komal Thatal','Jitendra Singh','Aniket Jadhav'],
         answer:2
     },
     {
@@ -136,19 +136,19 @@ const quiz = [
         answer:0
     },
     {
-        options:['Lenny Rodrigues','Anwar Ali','Gurpreet Singh','Arshdeep Singh'],
+        options:['Lenny Rodrigues','Anwar Ali','Rowllin Borges','Rohit Kumar'],
         answer:0
     },
     {
-        options:['Amey Ranawade','Aniket Jadhav','Souvik Chakrabarti','Marcelinho'],
+        options:['Aitor Monroy','Edu Gracia','Diego Mauricio','Marcelinho'],
         answer:3
     },
     {
-        options:['Anwar Ali','Memo','Amarjit Singh Kiyam','Aniket Jadhav'],
+        options:['James Donachie','Memo','Hernan Santana','Ivan Gonzalez'],
         answer:1
     },
     {
-        options:['Jerri Lalrinzuala','Jayesh Rane','Balwant Singh','Nandhakumar Shekhar'],
+        options:['Jerri Lalrinzuala','Jayesh Rane','Manvir Singh','Nandhakumar Shekhar'],
         answer:3
     },
     {
@@ -177,7 +177,7 @@ const quiz = [
         answer:2
     },
     {
-        options:['Balwant Singh','CK Vineeth','Farukh Chaudhary','Reynier Fernandes'],
+        options:['Balwant Singh','CK Vineeth','Farukh Chaudhary','Raynier Fernandes'],
         answer:3
     },
     {
@@ -339,7 +339,7 @@ const quiz = [
         answer:2
     },
     {
-        options:['Alex Lima','Brnjamin Lambot','Dylan Fox','Sergio Cido'],
+        options:['Alex Lima','Benjamin Lambot','Dylan Fox','Sergio Cido'],
         answer:0
     },
     {
@@ -359,7 +359,7 @@ const quiz = [
         answer:0
     },
     {
-        options:['Nafender Gahlot','Jeakson Singh','Sumit Rathi','Apuia'],
+        options:['Narender Gahlot','Jeakson Singh','Sumit Rathi','Apuia'],
         answer:2
     },
     {
@@ -400,7 +400,7 @@ const quiz = [
         answer:2
     },
     {
-        options:['Pronay Halder','Sandeep Singh','Boris Singh','Seriton Fernandes'],
+        options:['Jordan Murray','Jorge Ortiz','Sergio Cidoncha','Ivan Gonzalez'],
         answer:1
-    }
+    },
 ]
