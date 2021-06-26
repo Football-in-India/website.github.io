@@ -151,6 +151,7 @@ nav a:hover{
 #user {
     font-size: 40px;
     cursor: pointer;
+    padding-top: 7px;
 }
 
 /* Privacy Policy */

@@ -382,7 +382,6 @@ const quiz = [
         options:['Romario Jesuraj','Udanta Singh','Thoi Singh','Mandar Rao Desai'],
         answer:1
     },
-    //update
     {
         options:['Akash Mishra','Glan Martins','Hendry Antonay','Harmanpreet Singh'],
         answer:0
@@ -403,4 +402,125 @@ const quiz = [
         options:['Jordan Murray','Jorge Ortiz','Sergio Cidoncha','Ivan Gonzalez'],
         answer:1
     },
+    //update
+    {
+        options:['Abdul Hakku','Mohamed Ali','Jobby Justin','Ninthoi Meetei'],
+        answer:1
+    },
+    {
+        options:['Samuel Lalmuanpia','Mobashir Rahman','Amey Ranawade','Manvir Singh'],
+        answer:2
+    },
+    {
+        options:['Arshdeep Singh','Naveen Kumar','Kamaljit Singh','Pawan Kumar'],
+        answer:0
+    },
+    {
+        options:['Alex Lima','Deshorn Brown','Bright Enobakhare','Diego Mauricio'],
+        answer:2
+    },
+    {
+        options:['Jordan Murray','Benjamin Lambot','Cleiton Silva','Deshorn Brown'],
+        answer:3
+    },
+    {
+        options:['Jordan Murray','Benjamin Lambot','Cleiton Silva','Sergio Cidoncha'],
+        answer:2
+    },
+    {
+        options:['Mobashir Rahman','Leon Augustine','Samuel Lalmuanpia','Saviour Gama'],
+        answer:3
+    },
+    {
+        options:['Semboi Haokip','Glan Martins','Abdul Hakku','Mobashir Rahman'],
+        answer:2
+    },
+    {
+        options:['Ivan Gonzalez','Benjamin Lambot','Pilkington','Danny Fox'],
+        answer:0
+    },
+    {
+        options:['Redeem Tlang','Joby Justin','Rohit Kumar','Thoi Singh'],
+        answer:1
+    },
+    {
+        options:['Jordan Muuray','Matti Steinman','Brnjamin Lambot','Kwesi Appiah'],
+        answer:2
+    },
+    {
+        options:['Leon Augustine','Puitea','Vignesh D','Seriton Fernandes'],
+        answer:0
+    },
+    {
+        options:['Seriton Fernandes','Redeem Tlang','Thoi Singh','Manvir Singh'],
+        answer:3
+    },
+    {
+        options:['Edu Garcia','Diego Mauricio','Javi Hernandes','Jcob Tratt'],
+        answer:1
+    },
+    {
+        options:['Vignesh D','Boris Singh','Komal Thatal','Mobashir Rahman'],
+        answer:3
+    },
+    {
+        options:['Vicente Gomes','Jordan Murray','Fatkhulloev','Steven Taylor'],
+        answer:1
+    },
+    {
+        options:['Ninthoi Meetei','Vignesh D','Souvik Chakrabarti','Harmanpreet Singh'],
+        answer:0
+    },
+    {
+        options:['Steven Taylor','Fatkhulloev','Vicente Gomes','Pilkington'],
+        answer:3
+    },
+    {
+        options:['Pronay Halder','Rohit Kumar','Rahim Ali','Raju Gaikwad'],
+        answer:0
+    },
+    {
+        options:['Thoi Singh','Imran Khan','Puitea','Mohammed Rakip'],
+        answer:2
+    },
+    {
+        options:['Mohammed Rakip','Rahim Ali','Thoi Singh','Romario Jesuraj'],
+        answer:1
+    },
+    {
+        options:['Seriton Fernandes','Redeem Tlang','Thoi Singh','Mohammed Rakip'],
+        answer:3
+    },
+    {
+        options:['Redeem Tlang','Samuel Lalmuanpuia','Thoi Singh','Imran Khan'],
+        answer:0
+    },
+    {
+        options:['Vignesh D','Boris Singh','Komal Thatal','Rohit Kumar'],
+        answer:3
+    },
+    {
+        options:['Souvik Chakrabarti','Romario Jesuraj','Vignesh D','Sandeep Singh'],
+        answer:1
+    },
+    {
+        options:['Sandeep Singh','Vignesh D','Souvik Chakrabarti','Harmanpreet Singh'],
+        answer:0
+    },
+    {
+        options:['Vignesh D','Boris Singh','Thoi Singh','Seriton Fernandes'],
+        answer:3
+    },
+    {
+        options:['Seriton Fernandes','Thoi Singh','Komal Thatal','Raju Gaikwad'],
+        answer:0
+    },
+    {
+        options:['Thoi Singh','Imran Khan','Komal Thata','Boris Singh'],
+        answer:0
+    },
+    {
+        options:['Boris Singh','Komal Thatal','Vignesh D','Samuel Lalmuanpuia'],
+        answer:2
+    }
 ]
