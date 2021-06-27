@@ -91,7 +91,7 @@ if(register_form){
             formlogin.classList.add("hide");
             formSign.classList.add("hide");
             formProfile.classList.remove("hide");
-            alert("saved")
+            alert("Signed in successfully")
             getUser();
 
             
