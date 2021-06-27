@@ -113,7 +113,7 @@ function gameOver(){
 function gameResult(){
     const user = firebase.auth().currentUser;
     const uid = user.uid;
-    var userid = database.ref(uid)
+    var userid = database.ref('users/' + uid)
     userid.on("value", function(snapshot){
         var data = snapshot.val()
         resultBox.querySelector(".user-name").innerHTML = data.userName
@@ -173,7 +173,7 @@ function currentQstn(){
 function getData(){
     const user = firebase.auth().currentUser;
     const uid = user.uid;
-    var userid = database.ref(uid)
+    var userid = database.ref('users/' + uid)
     userid.on("value", function(snapshot){
         var data = snapshot.val()
         questionCounter = data.questionCount;
@@ -187,7 +187,7 @@ var database = firebase.database()
 function updateDb(){
     const user = firebase.auth().currentUser;
     const uid = user.uid;
-    database.ref(uid).update({
+    database.ref('users/' + uid).update({
         questionCount : questionCounter,
         correct : correct
     })

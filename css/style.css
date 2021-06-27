@@ -23,6 +23,7 @@ main{
     margin: 0 auto;
     padding: 30px 20px;
     min-height: calc(100vh - 60px - 50px);
+    text-align: center;
 }
 
 /* header */
@@ -217,12 +218,6 @@ nav a:hover{
     box-sizing: border-box;
 }
 
-.center h6{
-    color: red;
-    text-align: center;
-    margin-top: 15px;
-}
-
 form .txt_field{
     position: relative;
     border-bottom: 2px solid #adadad;
@@ -324,6 +319,13 @@ input[type="submit"]:hover{
     color: white;
 }
 
+.log_error, .sign_error{
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
 
 .profile_btn{
     margin: 20px 0;
@@ -359,6 +361,7 @@ input[type="submit"]:hover{
     color: red;
     font-size: 14px;
     margin-top: -20px;
+    text-align: center;
 }
 
 /* footer */
@@ -519,6 +522,8 @@ section i :hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
   }
   
   .controls div {

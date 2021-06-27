@@ -81,7 +81,7 @@ if(register_form){
             sign_error.innerHTML = ''
             const user = firebase.auth().currentUser;
             const uid = user.uid;
-            database.ref(uid).set({
+            database.ref('users/' + uid).set({
                 email : email,
                 // password : password,
                 userName : userName,
@@ -195,7 +195,7 @@ if(profile_edit_form){
     const user = firebase.auth().currentUser;
     const uid = user.uid;
     let newName = profile_edit_form.newName.value;
-    database.ref(uid).update({
+    database.ref('users/' + uid).update({
       userName: newName
     })
     alert("User name updated successfully!")
@@ -206,7 +206,7 @@ if(profile_edit_form){
 function getUser(){
   const user = firebase.auth().currentUser;
   const uid = user.uid;
-  var userid = database.ref(uid)
+  var userid = database.ref('users/' + uid)
   userid.on("value", function(snapshot){
     var data = snapshot.val()
     message_value.innerHTML = "<b>User Name:</b> " + data.userName + "<br><b>E-mail:</b> " + data.email;
