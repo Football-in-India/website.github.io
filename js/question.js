@@ -496,7 +496,7 @@ const quiz = [
         answer:0
     },
     {
-        options:['Vignesh D','Boris Singh','Komal Thatal','Rohit Kumar'],
+        options:['Cy Goddard','David Grande','Jakob Sylvestr','Cido'],
         answer:3
     },
     {
@@ -516,7 +516,7 @@ const quiz = [
         answer:0
     },
     {
-        options:['Thoi Singh','Imran Khan','Komal Thata','Boris Singh'],
+        options:['Thoi Singh','Imran Khan','Komal Thatal','Boris Singh'],
         answer:0
     },
     {
