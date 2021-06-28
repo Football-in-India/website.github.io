@@ -192,3 +192,28 @@ function updateDb(){
         correct : correct
     })
 }
+
+//list
+
+// function leaderboard(){
+//     var database = firebase.database()
+//     var userRef = database.ref('users');
+//     userRef.orderByChild('final').once('value', (snapshot) => {
+//             snapshot.forEach((childSnapshot) => {
+//               var childKey = childSnapshot.key;
+//               var childData = childSnapshot.val();
+//               // ...
+//               console.log("number of users "+snapshot.numChildren())
+//               let i = snapshot.numChildren();
+//               var newRow = table.insertRow(1);
+//         var cell1 = newRow.insertCell(0);
+//         var cell2 = newRow.insertCell(1);
+
+//         cell1.innerHTML = childData.userName;
+//         cell2.innerHTML = childData.final;
+//           });
+        
+//     })
+// }
+
+
