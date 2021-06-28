@@ -86,7 +86,8 @@ if(register_form){
                 // password : password,
                 userName : userName,
                 questionCount : 0,
-                correct : 0
+                correct : 0,
+                final: 0
             })
             formlogin.classList.add("hide");
             formSign.classList.add("hide");

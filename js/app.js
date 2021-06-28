@@ -5,14 +5,18 @@ const nextButton = document.getElementById("btn");
 const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
+const leaderBox = document.querySelector(".leader-box");
 const log_in = document.querySelector(".log_in");
 const start_btn = document.querySelector(".start_btn");
+
+var table = document.getElementsByTagName('table')[1];
 
 let questionCounter = -1;
 let currentQuestion;
 let availableQuestions = [];
 let availableOptions = [];
 let correct = 0;
+let myScore = 0;
 
 var myImage = document.getElementById('mainImage');
 var imageArray = ["img/0.webp", "img/1.png", "img/2.png", "img/3.png", "img/4.png", "img/5.png", "img/6.png", "img/7.png", "img/8.png", "img/9.png", "img/10.png", "img/11.png", "img/12.png", "img/13.png", "img/14.webp", "img/15.png", "img/16.png", "img/17.png", "img/18.png", "img/19.png",
@@ -105,6 +109,15 @@ function next(){
 }
 
 function gameOver(){
+    if (myScore < correct) {
+        var database = firebase.database()
+        const user = firebase.auth().currentUser;
+        const uid = user.uid;
+        database.ref('users/' + uid).update({
+        final: correct
+        })
+    }
+    leaderBox.classList.add("hide");
     quizBox.classList.add("hide");
     resultBox.classList.remove("hide");
     gameResult();
@@ -177,7 +190,8 @@ function getData(){
     userid.on("value", function(snapshot){
         var data = snapshot.val()
         questionCounter = data.questionCount;
-        correct = data.correct
+        correct = data.correct;
+        myScore = data.final
         console.log("Database")
   })
 }
@@ -195,25 +209,31 @@ function updateDb(){
 
 //list
 
-// function leaderboard(){
-//     var database = firebase.database()
-//     var userRef = database.ref('users');
-//     userRef.orderByChild('final').once('value', (snapshot) => {
-//             snapshot.forEach((childSnapshot) => {
-//               var childKey = childSnapshot.key;
-//               var childData = childSnapshot.val();
-//               // ...
-//               console.log("number of users "+snapshot.numChildren())
-//               let i = snapshot.numChildren();
-//               var newRow = table.insertRow(1);
-//         var cell1 = newRow.insertCell(0);
-//         var cell2 = newRow.insertCell(1);
+function leaderboard(){
+    quizBox.classList.add("hide");
+    resultBox.classList.add("hide");
+    leaderBox.classList.remove("hide");
+    var database = firebase.database()
+    var userRef = database.ref('users');
+    userRef.orderByChild('final').once('value', (snapshot) => {
+            snapshot.forEach((childSnapshot) => {
+              var childKey = childSnapshot.key;
+              var childData = childSnapshot.val();
+              // ...
+            //   console.log("number of users "+snapshot.numChildren())
+            //   let i = snapshot.numChildren();
+            if (childData.final != 0) {
+                var newRow = table.insertRow(1);
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
 
-//         cell1.innerHTML = childData.userName;
-//         cell2.innerHTML = childData.final;
-//           });
+            cell1.innerHTML = childData.userName;
+            cell2.innerHTML = childData.final;
+            }
+            
+          });
         
-//     })
-// }
+    })
+}
 
 

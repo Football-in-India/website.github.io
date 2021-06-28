@@ -761,7 +761,7 @@ section i :hover{
     color: #ffffff;
 }
 
-.result-box{
+.result-box, .leader-box{
     color: white;
     text-align: center;
 }
@@ -776,13 +776,13 @@ section i :hover{
     margin-bottom: 20px;
 }
 
-.result-box table{
+table{
     width: 100%;
     border-collapse: collapse;
     margin: 30px, 0px;
 }
 
-.result-box table td{
+table td{
     border: 1px solid white;
     padding: 8px;
     font-weight: 500;
@@ -793,6 +793,17 @@ section i :hover{
 
 .result-box .btn{
     margin-top: 20px;
+    width: 180px;
+}
+
+.leader-box .btn{
+    margin-top: 20px;
+}
+
+.leader-box  h1{
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 20px;
 }
 
 /* @media (max-width: 453px) {
