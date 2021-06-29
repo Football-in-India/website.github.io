@@ -901,6 +901,9 @@ table td{
     .quiz-box .option-container .option, .quiz-box .btn{
         line-height: 14px;
     }
+    .center{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -953,7 +956,6 @@ table td{
 
     .center{
         position: absolute;
-        top: 50%;
         transform: translate(-50%, -50%);
         width: 320px;
         background: black;
