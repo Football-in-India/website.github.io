@@ -7,7 +7,8 @@ function getHtml(element) {
 //   const datas = Array.from({ length: 51 })
 //     .map((_, index) => `Item ${index + 1}`);
 
-    var newsArray = ["<b>20 June 2021</b>","Shridh Bihar United FC (senior team)","<b>12 June 2021</b>","Techto Swades United (senior team)"];
+    var newsArray = ["<b>29 June 2021</b>", "Rajasthan United FC: U-13, U-15 & U-20; July 3, July 5, July 6; Visit @rajasthanunitedfc Instagram page for more details",
+"<b>20 June 2021</b>","Shridh Bihar United FC (senior team)","<b>12 June 2021</b>","Techto Swades United (senior team)"];
   
   // Define application states like actual page, total pages...
   let perPage = 6;
