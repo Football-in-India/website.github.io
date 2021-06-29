@@ -7,7 +7,7 @@ function getHtml(element) {
 //   const datas = Array.from({ length: 51 })
 //     .map((_, index) => `Item ${index + 1}`);
 
-    var newsArray = ["<b>29 June 2021</b>","Joy Bhattacharjya (project director, 2017 FIFA U-17 WC): “We need to find better people to manage federations. We need a watchdog on federations to ensure they do their job.” – thewire.in",
+    var newsArray = ["<b>29 June 2021</b>","Aspiring footballers, including those from the underprivileged section of society, from the traditional sporting hub of Kodagu will get a chance to sharpen their skills and show their class at the Bangalore Football Stadium with the Kodagu FC set to figure in this season's BDFA Super Division league – TOI","Joy Bhattacharjya (project director, 2017 FIFA U-17 WC): “We need to find better people to manage federations. We need a watchdog on federations to ensure they do their job.” – thewire.in",
 "<b>28 June 2021</b>","East Bengal midfielder Jacques Maghoma clarifies that he has not signed for Spalding United","Carles Cuadrat reveals that it was because of Albert Roca, he had took over as the head coach of Bengaluru FC – KhelNow","FC Goa DOF Ravi Puskur: “It is cheaper to find good foreign players than quality Indian players – TOI",
 "<b>27 June 2021</b>","Amey Ranawade: “We just do not want to play in the AFC Champions League; we want to win in the tournament. We want to play good attacking football and qualify further (than FC Goa)” – the bridge.in",
 "<b>26 June 2021</b>","Hero I-League 2021-22 to be held in Kolkata from December","Second Division league to be held at a single venue in Bengaluru in September","Futsal Club Championship will be held in October in Shillong",
