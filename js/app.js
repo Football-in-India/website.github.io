@@ -230,11 +230,10 @@ function leaderboard(){
             var cell2 = newRow.insertCell(2);
 
             cell0.innerHTML = i;
-            i--;
             cell1.innerHTML = childData.userName;
             cell2.innerHTML = childData.final;
             }
-            
+            i--;
           });
         
     })
