@@ -557,7 +557,7 @@ section i :hover{
     /* max-width: 700px; */
     width: 40%;
     background-color: rgb(0, 0, 0);
-    margin: 40px auto;
+    margin: 10px auto;
     padding: 20px 30px;
     border-radius: 5px;
     animation: fadeInRight 1s ease;
