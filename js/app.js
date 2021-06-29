@@ -146,9 +146,11 @@ function resetQuiz(){
 }
 
 function tryAgain(){
-    resultBox.classList.add("hide");
-    quizBox.classList.remove("hide");
-    resetQuiz();
+    if (window.confirm("Play again?")) {
+        resultBox.classList.add("hide");
+        quizBox.classList.remove("hide");
+        resetQuiz();
+    }
 }
 
 function startGame(){
