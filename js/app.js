@@ -9,7 +9,7 @@ const leaderBox = document.querySelector(".leader-box");
 const log_in = document.querySelector(".log_in");
 const start_btn = document.querySelector(".start_btn");
 
-var table = document.getElementsByTagName('table')[1];
+var leaderTable = document.getElementsByTagName('table')[1];
 
 let questionCounter = -1;
 let currentQuestion;
@@ -216,6 +216,7 @@ function leaderboard(){
     var database = firebase.database()
     var userRef = database.ref('users');
     userRef.orderByChild('final').once('value', (snapshot) => {
+        let i = snapshot.numChildren();
             snapshot.forEach((childSnapshot) => {
               var childKey = childSnapshot.key;
               var childData = childSnapshot.val();
@@ -223,10 +224,13 @@ function leaderboard(){
             //   console.log("number of users "+snapshot.numChildren())
             //   let i = snapshot.numChildren();
             if (childData.final != 0) {
-                var newRow = table.insertRow(1);
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
+                var newRow = leaderTable.insertRow(1);
+            var cell0 = newRow.insertCell(0);
+            var cell1 = newRow.insertCell(1);
+            var cell2 = newRow.insertCell(2);
 
+            cell0.innerHTML = i;
+            i--;
             cell1.innerHTML = childData.userName;
             cell2.innerHTML = childData.final;
             }
@@ -234,6 +238,10 @@ function leaderboard(){
           });
         
     })
+}
+
+function goBack(){
+    window.location = "quiz.html"
 }
 
 

@@ -131,6 +131,7 @@ nav a:hover{
 #logo-img img{
     height: 50px;
     padding-top: 0px;
+    border-radius: 50%;
 }
 
 #name{
@@ -786,7 +787,7 @@ table td{
     border: 1px solid white;
     padding: 8px;
     font-weight: 500;
-    width: 50%;
+    /* width: 50%; */
     text-align: left;
     font-size: 18px;
 }
@@ -801,8 +802,6 @@ table td{
 }
 
 .leader-box  h1{
-    font-size: 36px;
-    line-height: 42px;
     margin-bottom: 20px;
 }
 
