@@ -1,8 +1,8 @@
 var date = document.querySelector(".updateDate");
 
-date.innerHTML = 'Last updated on 29 June 2020'
+date.innerHTML = 'Last updated on 1 July 2021'
 
-    var newsArray = ["Rajasthan United FC: U-13, U-15 & U-20; July 3, July 5, July 6; Visit @rajasthanunitedfc Instagram page for more details",
+    var newsArray = ["Reliance Foundation Young Champs: For those who born between 1 January 2008 & 31 December 2009; Last date: 31st July; To register, download aiscout app","Rajasthan United FC: U-13, U-15 & U-20; July 3, July 5, July 6; Visit @rajasthanunitedfc Instagram page for more details",
 "Shridh Bihar United FC (senior team)","Techto Swades United (senior team)"];
   
 let divContent = document.getElementById('divContent');
