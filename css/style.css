@@ -497,14 +497,19 @@ section i :hover{
 }
 
 .newItem{
+    font-family: 'Roboto',sans-serif;
     width: 90%;
-    margin: 5px auto;
-    background: #f0f0f0;
+    margin: 10px auto;
+    background: whitesmoke;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
     font-size: 30px;
     text-align: left;
+}
+
+.newItem:hover{
+    box-shadow: 6px 6px 6px -6px #777;
 }
 
 #listEnd{
@@ -913,6 +918,7 @@ table td{
     .newItem{
         padding: 10px;
         font-size: 20px;
+        width: 100%;
     }
 }
 
