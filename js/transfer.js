@@ -1,6 +1,6 @@
 var date = document.querySelector(".updateDate");
 
-date.innerHTML = 'Last updated on 1 July 2020'
+date.innerHTML = 'Last updated on 1 July 2021'
 
 var newsArray = ["Sreenidhi Deccan FC are all set to sign 23 year old ex TRAU FC Full-back Shahabaaz Khan – IFTWC","Mohammedan SC is in chase to secure the signature of Balwant Singh","Jamshedpur FC parts ways with Aitor Monroy","I-League new entrants Sreenidhi FC secures the signature of Defensive Midfielder Mayakannan",
 "Churchill Brothers have extended the contract of young midfielder Shubert Pereira till 2023","David Grande bids adieu to Jamshedpur FC after one and a half seasons at the club","Churchill Brothers have signed 23-year old Midfielder/Left Winger Varun Thockchom from Neroca FC","Salam Ranjan Singh signs multi-year contract with Chennaiyin FC – IFTWC","Bengaluru FC announces the signing of Rohit Kumar from Kerala Blasters","Bengaluru FC completes the signing of former Aston Villa centre-forward Rudy Gestede","Chennaiyin FC confirm the signing of Narayan Das on a 2-year deal","25 year old ATK Mohun Bagan Centre-Back Salam Ranjan Singh is in talks with Chennaiyin FC","TRAU FC sign East Bengal U19 Left Wing Back Bikash Singh Sagolshem","ATK Mohun Bagan announces the signing of Deepak Tangri","Singam Subash Singh all set to join FC Bengaluru United from Mohammedan SC",
