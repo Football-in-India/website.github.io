@@ -992,4 +992,8 @@ table td{
     form .txt_field{
         margin: 25px 0;
     }
+
+    .updateDate{
+        font-size: 12px;
+    }
 }
