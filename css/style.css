@@ -482,74 +482,75 @@ section i :hover{
 }
 
 /* transfer.html */
-  
-  :root {
-    --primary: #c014c0;
-    --primary-light: #c790c7;
-    --dark: #1a1919;
-    --light: #f0f0f0;
-  }
 
-  
-  .container {
-    margin-top: 10px;
-    width: 100%;
-    max-width: 90%;
+.updateDate{
+    font-style: italic;
+    font-size: 15px;
+}
+
+#divContent{
+    width: 95%;
+    display: block;
     margin: 0 auto;
+    /* border:  2px solid black; */
+    text-align: center;
+}
+
+.newItem{
+    width: 90%;
+    margin: 5px auto;
     background: #f0f0f0;
-  }
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-align: left;
+}
+
+#listEnd{
+    /* width: 90%;
+    display:  block;
+    margin: 5px auto;
+    border: 2px solid black;
+    text-align: center; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    height: 36px;
+    padding-bottom: 30px;
+}
+
+#listEnd.hide{
+    display: none;
+}
+
+#listEnd span{
+    color: #c014c0;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 2px;
+    animation: textLoading 1s calc(var(--i)*1s) ease-in-out infinite alternate;
+    transform: translateY(50px);
+}
+
+@keyframes textLoading {
+    0%{
+        transform: translateY(50px);
+    }
+    30%{
+        transform: translateY(-10px);
+    }
+    50%, 100%{
+        transform: translateY(0);
+    }
+}
+  
 
   .main_head{
-      padding-bottom: 20px;
+      padding-bottom: 10px;
   }
   
-  
-  #pagination .list {
-    margin: 0px 0;
-  }
-  
-  #pagination .list .item {
-    padding: 20px;
-    border-bottom: 4px solid white;
-    font-size: 24px;
-  }
-  
-  #pagination .list .item:hover {
-    background: black;
-    color: white;
-  }
-  
-  .controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
-  }
-  
-  .controls div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .controls div:not(.numbers) {
-    width: 50px;
-    height: 60px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .controls .numbers {
-    display: flex;
-    align-items: center;
-  }
-  
-  .controls .numbers div:hover,
-  .controls .numbers div.active {
-    color: black;
-    font-weight: bold;
-  }
 
 /* Quiz.html */
 
@@ -819,6 +820,10 @@ table td{
     .custom-box{
         width: 60%;
     }
+    .newItem{
+        padding: 15px;
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 730px) {
@@ -903,6 +908,11 @@ table td{
     }
     .center{
         margin-top: 20px;
+    }
+
+    .newItem{
+        padding: 10px;
+        font-size: 20px;
     }
 }
 
