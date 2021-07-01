@@ -1,6 +1,6 @@
 var date = document.querySelector(".updateDate");
 
-date.innerHTML = 'Last updated on 29 July 2020'
+date.innerHTML = 'Last updated on 29 June 2020'
 
     var newsArray = ["Rajasthan United FC: U-13, U-15 & U-20; July 3, July 5, July 6; Visit @rajasthanunitedfc Instagram page for more details",
 "Shridh Bihar United FC (senior team)","Techto Swades United (senior team)"];
