@@ -1,6 +1,6 @@
 var date = document.querySelector(".updateDate");
 
-date.innerHTML = 'Last updated on 3 July 2021'
+date.innerHTML = 'Last updated on 4 July 2021'
 
 var newsArray = ["Khogen Singh, who won the 2017-18 I-League with Minerva Punjab FC , has been appointed as the head coach of NEROCA FC for the upcoming season","Mohammedan SC sign former Sudeva FC and Aizawl FC defender Lalramhmunmawia on a two year deal","Yrondu Musavu-King has signed a contract extension with Bengaluru FC until 2023","Hafiz AM has penned a two year deal with Kerala Premier League side Kerala United FC","Hyderabad FC’s 21-year-old winger Sweden Fernandes will join Neroca FC on a season-long loan move","Goalkeeper Ubaid CK has joined Sreenidhi FC from Gokulam Kerala FC","Neroca FC has signed 23-year-old defender Jonathan Cardozo",
 "Neroca FC extends the contract of centre back Manjit Sharma for one more year","Debjit Majumder has penned in a two year deal with Chennaiyin FC","Kabir Toufik has joined Mohammedan SC from Chennai City FC","Debjit Majumdar has announced that he has left SC East Bengal","Chennaiyin FC announces the signing of 25-year-old center-back Salam Ranjan Singh from ATK Mohun Bagan","TRAU FC have announced the signing of forward Joysana Nongthombam from Chennaiyin FC","Sreenidhi Deccan FC are all set to announce the signing of midfielder Lalromawia from Gokulam Kerala FC","Takhellambam Deepak Singh has joined Gokulam Kerala FC from Neroca FC",
