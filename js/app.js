@@ -11,7 +11,8 @@ const start_btn = document.querySelector(".start_btn");
 
 var leaderTable = document.getElementsByTagName('table')[1];
 
-let questionCounter = -1;
+// let questionCounter = -1;
+let questionCounter = 0;
 let currentQuestion;
 let availableQuestions = [];
 let availableOptions = [];
@@ -77,7 +78,6 @@ function getResult(element){
     if(id === currentQuestion.answer){
         element.classList.add("correct");
         correct++;
-        // updateDb();
     }
     else{
         element.classList.add("wrong");
@@ -87,7 +87,7 @@ function getResult(element){
             }
         }
     }
-    updateDb();
+    // updateDb();
     unclickableOptions();
 }
 
@@ -109,14 +109,14 @@ function next(){
 }
 
 function gameOver(){
-    if (myScore < correct) {
-        var database = firebase.database()
-        const user = firebase.auth().currentUser;
-        const uid = user.uid;
-        database.ref('users/' + uid).update({
-        final: correct
-        })
-    }
+    // if (myScore < correct) {
+    //     var database = firebase.database()
+    //     const user = firebase.auth().currentUser;
+    //     const uid = user.uid;
+    //     database.ref('users/' + uid).update({
+    //     final: correct
+    //     })
+    // }
     leaderBox.classList.add("hide");
     quizBox.classList.add("hide");
     resultBox.classList.remove("hide");
@@ -124,13 +124,13 @@ function gameOver(){
 }
 
 function gameResult(){
-    const user = firebase.auth().currentUser;
-    const uid = user.uid;
-    var userid = database.ref('users/' + uid)
-    userid.on("value", function(snapshot){
-        var data = snapshot.val()
-        resultBox.querySelector(".user-name").innerHTML = data.userName
-    })
+    // const user = firebase.auth().currentUser;
+    // const uid = user.uid;
+    // var userid = database.ref('users/' + uid)
+    // userid.on("value", function(snapshot){
+    //     var data = snapshot.val()
+    //     resultBox.querySelector(".user-name").innerHTML = data.userName
+    // })
     resultBox.querySelector(".total-question").innerHTML = quiz.length;
     resultBox.querySelector(".total-correct").innerHTML = correct;
     resultBox.querySelector(".total-wrong").innerHTML = quiz.length - correct;
@@ -153,22 +153,27 @@ function tryAgain(){
     }
 }
 
-function startGame(){
-    firebase.auth().onAuthStateChanged((user) => {
-        if (user) {
-            console.log("logged in")
-            getData();
-            start_btn.innerHTML = "Loading..."
-            setAvailableQuestions();
-            currentQstn();
-        } else {
-          // User is signed out
-          // ...
-          log_in.classList.remove("hide");
-          console.log("Not logged")
-        }
-      });
-    }
+function startGame() {
+    setAvailableQuestions();
+    currentQstn();
+}
+
+// function startGame(){
+//     firebase.auth().onAuthStateChanged((user) => {
+//         if (user) {
+//             console.log("logged in")
+//             getData();
+//             start_btn.innerHTML = "Loading..."
+//             setAvailableQuestions();
+//             currentQstn();
+//         } else {
+//           // User is signed out
+//           // ...
+//           log_in.classList.remove("hide");
+//           console.log("Not logged")
+//         }
+//       });
+//     }
 
 
 function currentQstn(){
