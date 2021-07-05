@@ -141,7 +141,7 @@ function gameResult(){
 function resetQuiz(){
     questionCounter = 0;
     correct = 0;
-    updateDb();
+    // updateDb();
     startGame();
 }
 
