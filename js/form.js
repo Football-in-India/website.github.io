@@ -32,16 +32,16 @@ function logIn(){
 }
 
 // Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyDFq4sMn9zv_hiQiBmvL3YH_eNicBDyITE",
-    authDomain: "website-6175c.firebaseapp.com",
-    projectId: "website-6175c",
-    storageBucket: "website-6175c.appspot.com",
-    messagingSenderId: "125832833514",
-    appId: "1:125832833514:web:86c7d718d2b53c788cea93"
-  };
+// var firebaseConfig = {
+//     apiKey: "AIzaSyDFq4sMn9zv_hiQiBmvL3YH_eNicBDyITE",
+//     authDomain: "website-6175c.firebaseapp.com",
+//     projectId: "website-6175c",
+//     storageBucket: "website-6175c.appspot.com",
+//     messagingSenderId: "125832833514",
+//     appId: "1:125832833514:web:86c7d718d2b53c788cea93"
+//   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  // firebase.initializeApp(firebaseConfig);
 
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
