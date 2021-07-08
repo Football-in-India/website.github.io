@@ -22,12 +22,7 @@ let appending = false;
 
 console.log("transfer")
 
-var database = firebase.database();
-var mainRef = database.ref('transfer/news');
-mainRef.once('value', (snapshot) => {
-  newslength = snapshot.numChildren();
-  console.log("length = "+newslength)
-});
+
 
 loadCount();
 
