@@ -12,13 +12,13 @@ firebase.initializeApp(firebaseConfig);
 
 var date = document.querySelector(".updateDate");
 
-date.innerHTML = 'Last updated on 5 July 2021'
+date.innerHTML = 'Last updated on 8 July 2021'
 
 let divContent = document.getElementById('divContent');
 let listEnd = document.getElementById('listEnd');
 let itemCount = 0;
 let newslength = 0;
-let appending = false;
+let appending;
 
 console.log("transfer")
 
