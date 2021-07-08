@@ -1,3 +1,15 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyDFq4sMn9zv_hiQiBmvL3YH_eNicBDyITE",
+  authDomain: "website-6175c.firebaseapp.com",
+  projectId: "website-6175c",
+  storageBucket: "website-6175c.appspot.com",
+  messagingSenderId: "125832833514",
+  appId: "1:125832833514:web:86c7d718d2b53c788cea93"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 var date = document.querySelector(".updateDate");
 
 date.innerHTML = 'Last updated on 5 July 2021'
@@ -20,23 +32,44 @@ var newsArray = ["Mohammedan SC set to sign Trinidad and Tobago international Ma
 "Chennaiyin FC, Sreenidhi FC  & Churchill Brothers are interested in Wayne Vaz", "Churchill Brothers appoints Romanian Peter Gigiu as their head coach", "Ivan Vukomanovic joins Kerala Blasters as head coach",
 "Gary Hooper has returned to Wellington Phoenix after a breif stint with Kerala Blaters"];
 
+
+
 let divContent = document.getElementById('divContent');
 let listEnd = document.getElementById('listEnd');
 let itemCount = 0;
+let newslength = 0;
 let appending = false;
 
-window.addEventListener('DOMContentLoaded', load);
-function load(){
-  addItems();
+console.log("transfer")
+
+var database = firebase.database();
+var mainRef = database.ref('transfer/news');
+mainRef.once('value', (snapshot) => {
+  newslength = snapshot.numChildren();
+  console.log("length = "+newslength)
+});
+
+
+if (newslength > 0) {
+  window.addEventListener('DOMContentLoaded', load);
+  function load(){
+    addItems();
+  }
 }
 
 function addItems(){
   appending = true;
   for(let i =0 ; i<10; i++){
-    if (itemCount < newsArray.length) {
-      let newItem = generateDataBlock(newsArray[itemCount]);
-    divContent.appendChild(newItem);
-    itemCount++;
+    if (newslength > 0) {
+      var myRef = firebase.database().ref('transfer/news/'+(newslength-1));
+      newslength--;
+      myRef.on('value', (snapshot) => {
+      const data = snapshot.val();
+
+      let newItem = generateDataBlock(data);
+      divContent.appendChild(newItem);
+  });
+      
     }
     else{
       listEnd.classList.add("hide");
