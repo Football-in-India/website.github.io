@@ -48,11 +48,17 @@ mainRef.once('value', (snapshot) => {
   console.log("length = "+newslength)
 });
 
+loadCount();
 
-if (newslength > 0) {
-  window.addEventListener('DOMContentLoaded', load);
-  function load(){
-    addItems();
+function loadCount(){
+  if (newslength > 0) {
+    window.addEventListener('DOMContentLoaded', load);
+    function load(){
+      addItems();
+    }
+  }
+  else{
+    setTimeout(loadCount, 2000);
   }
 }
 
