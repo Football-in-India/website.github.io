@@ -22,9 +22,9 @@ let appending = false;
 
 console.log("transfer")
 
-var database = firebase.database();
-var mainRef = database.ref('transfer/news');
-mainRef.once('value', (snapshot) => {
+var promise = firebase.database().ref('transfer/news');
+// var mainRef = database.ref('transfer/news');
+promise.once('value', (snapshot) => {
   newslength = snapshot.numChildren();
   console.log("length = "+newslength)
 });
