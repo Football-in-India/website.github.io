@@ -17,7 +17,7 @@ date.innerHTML = 'Last updated on 5 July 2021'
 let divContent = document.getElementById('divContent');
 let listEnd = document.getElementById('listEnd');
 let itemCount = 0;
-let newslength = 0;
+let newslength = 1;
 let appending = false;
 
 console.log("transfer")
