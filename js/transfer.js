@@ -12,12 +12,12 @@ firebase.initializeApp(firebaseConfig);
 
 var date = document.querySelector(".updateDate");
 
-date.innerHTML = 'Last updated on 5 July 2021'
+date.innerHTML = 'Last updated on 9 July 2021'
 
 let divContent = document.getElementById('divContent');
 let listEnd = document.getElementById('listEnd');
 let itemCount = 0;
-let newslength;
+let newslength = 0;
 let appending = false;
 
 console.log("transfer")
@@ -33,23 +33,26 @@ loadCount();
 
 function loadCount(){
   if (newslength > 0) {
+    console.log("neslength loaded")
     window.addEventListener('DOMContentLoaded', load);
     function load(){
       addItems();
     }
   }
   else{
+    console.log("failed to load newscount")
     setTimeout(loadCount, 2000);
   }
 }
 
 function addItems(){
+  console.log("adding item")
   appending = true;
   for(let i =0 ; i<10; i++){
     if (newslength > 0) {
-      var myRef = firebase.database().ref('transfer/news/'+(newslength-1));
+      var promise = firebase.database().ref('transfer/news/'+(newslength-1));
       newslength--;
-      myRef.on('value', (snapshot) => {
+      promise.on('value', (snapshot) => {
       const data = snapshot.val();
 
       let newItem = generateDataBlock(data);
