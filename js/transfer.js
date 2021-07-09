@@ -17,7 +17,7 @@ date.innerHTML = 'Last updated on 5 July 2021'
 let divContent = document.getElementById('divContent');
 let listEnd = document.getElementById('listEnd');
 let itemCount = 0;
-let newslength = 1;
+let newslength = 0;
 let appending = false;
 
 console.log("transfer")
@@ -29,14 +29,14 @@ mainRef.once('value', (snapshot) => {
   console.log("length = "+newslength)
 });
 
-loadCount();
+setTimeout(loadCount, 2000);
 
 function loadCount(){
   if (newslength > 0) {
     console.log("neslength loaded")
     window.addEventListener('DOMContentLoaded', load);
     function load(){
-      addItems();
+      setTimeout(addItems, 2000);
     }
   }
   else{
