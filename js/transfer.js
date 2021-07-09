@@ -12,7 +12,7 @@ firebase.initializeApp(firebaseConfig);
 
 var date = document.querySelector(".updateDate");
 
-date.innerHTML = 'Last updated on 9 July 2021'
+date.innerHTML = 'Last updated on 5 July 2021'
 
 let divContent = document.getElementById('divContent');
 let listEnd = document.getElementById('listEnd');
@@ -22,9 +22,9 @@ let appending = false;
 
 console.log("transfer")
 
-var promise = firebase.database().ref('transfer/news');
-// var mainRef = database.ref('transfer/news');
-promise.once('value', (snapshot) => {
+var database = firebase.database();
+var mainRef = database.ref('transfer/news');
+mainRef.once('value', (snapshot) => {
   newslength = snapshot.numChildren();
   console.log("length = "+newslength)
 });
@@ -50,9 +50,9 @@ function addItems(){
   appending = true;
   for(let i =0 ; i<10; i++){
     if (newslength > 0) {
-      var promise = firebase.database().ref('transfer/news/'+(newslength-1));
-      newslength--;
-      promise.on('value', (snapshot) => {
+      var myRef = firebase.database().ref('transfer/news/'+2);
+      // newslength--;
+      myRef.on('value', (snapshot) => {
       const data = snapshot.val();
 
       let newItem = generateDataBlock(data);
